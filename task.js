@@ -1,19 +1,23 @@
 "use strict"
-function solveEquation(a, b, c) {
-  let arr = [x, x1, x2];
-  let a = 1;
-  let b = 2;
-  let c = 3;
+function solveEquation(name, ...roots) {
+  let a = 10;
+  let b = 10;
+  let c = 10;
   let d = Math.pow(b, 2) - 4*a*c;
-  let v = arr;
-  let data = arr[i];
-   let root = data[0];
-   let root1 = data[1];
-   let root2 = data[2];
-  
-  return arr;
-}
+  console.log(`Ответ: ${name}`);
 
-function calculateTotalMortgage(percent, contribution, amount, countMonths) {
+  if (d < 0) {
+    let root = 0;
+    console.log(`${roots}`);
+    return root;
+  } else if (d === 0) {
+    let root1 = -b/2*a;
+    console.log(`${roots}`);
+  } else if (d > 0) {
+    let root2 = (-b + Math.sqrt(d) )/(2*a);
+    let root3 = (-b - Math.sqrt(d) )/(2*a);
+    console.log(`${roots}`);
+  }
   
-}
+  solveEquation('Решение уравнения: ', root, root1, root2, root3);
+  
